@@ -1,0 +1,93 @@
+﻿<Window x:Class="Ado2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ado2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="514" MinHeight="550" MinWidth="512">
+    
+    <Grid>
+
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Stretch">
+            <Menu>
+                <MenuItem Header="Меню1">
+                    <MenuItem Header="Вся информация" Click="ShowAllData_Click"/>
+                    <MenuItem Header="Отображение всей информации о товаре" Click="ShowAllProductTypes_Click"/>
+                    <MenuItem Header="Отображение всей информации о достаке" Click="ShowAllSuppliers_Click"/>
+
+                    <Separator />
+                    <MenuItem Header="показать товар с максимальным количеством;" Click="ShowProductWithMaxQuantity_Click"/>
+                    <MenuItem Header="Показать товар с минимальным количеством" Click="ShowProductWithMinQuantity_Click"/>
+                    <MenuItem Header="Показать товар с минимальной себестоимостью" Click="ShowProductWithMinCost_Click"/>
+                    <MenuItem Header="Показать товар с максимальной себестоимостью" Click="ShowProductWithMaxCost_Click"/>
+
+
+                </MenuItem>
+                <MenuItem Header="Меню2">
+                    <MenuItem Header="Показать товары, заданной категории" Click="ShowProductCategory_click"/>
+                    <MenuItem Header="Показать товары, заданного поставщика" Click="ShowProductDelivery_click"/>
+                    <MenuItem Header="Показать самый старый товар на складе" Click="ShowTheOldest"/>
+                    <MenuItem Header="Показать среднее количество товаров по каждому типу товара" Click="ShowAvgQuantity"/>
+
+                </MenuItem>
+                <MenuItem Header="Меню3">
+                    <MenuItem Header="Добавить новый товар (ПИСАТЬ ЧЕРЕЗ ENTER)" Click="AddNewProduct"/>
+                    <MenuItem Header="Добавить новый тип продукта (ПИСАТЬ ЧЕРЕЗ ENTER если надо несколько)" Click="AddNewProductType"/>
+                    <MenuItem Header="Добавить нового поставщика (Множественного нету)" Click="AddNewSuppliers"/>
+
+                  
+                </MenuItem>
+                <MenuItem Header="Обновления">
+                    <MenuItem Header="Обновление информации о существующих товарах" Click="ChangeProduct2"/>
+                    <MenuItem Header="Обновление информации о существующих поставщиках" Click="ChangeSupplier2"/>
+                    <MenuItem Header="Обновление информации о существующих поставщиках" Click="ChangeType2"/>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Обновления2">
+                    <MenuItem Header="Показать информацию о поставщике с наибольшимколичеством товаров на складе;" Click="ShowMax"/>
+                    <MenuItem Header="Показать информацию о поставщике с наименьшимколичеством товаров на складе;" Click="ShowMin"/>
+                    <MenuItem Header="Показать информацию о типе товаров с наибольшимколичеством товаров на складе" Click="ShowMaxType"/>
+                    <MenuItem Header="Обновление информации о существующих поставщиках" Click="ShowMinType"/>
+                    <MenuItem Header="Показать товары с поставки, которых прошло заданное количество дней." Click="DateDif"/>
+                </MenuItem>
+            </Menu>
+
+
+
+            <DataGrid Height="300px" x:Name="dataGrid1">
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem x:Name="Cut" Header="Обновление товаров (Показать все товары)" Click="ChangeProduct"/>
+                        <MenuItem x:Name="Cut2" Header="Обновление поставщиков (Показать все поставщиков)" Click="ChangeSupplier"/>
+                        <MenuItem x:Name="Cut3" Header="Обновление типов (Показать все тип)" Click="ChangeType"/>
+                        <Separator></Separator>
+                        <MenuItem  Header="Удаление товаров (при Показать все товары)" Click="DeleteProduct"/>
+                        <MenuItem  Header="Удаление поставщиков (при Показать все поставщиков)" Click="DeleteSupplier"/>
+                        <MenuItem  Header="Удаление типов (при Показать все тип)" Click="DeleteType"/>
+
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Orientation="Vertical">
+
+                    <TextBox x:Name="textBox1" Height="100px" Width="300px" Margin="0px 20px 0px 0px" AcceptsReturn="True"></TextBox>
+                    <Button x:Name="Sub"  Width="150px" Height="20px" Margin="0px 10px" Content="Submit" Click="Submit"></Button>
+                </StackPanel>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Right">
+                    <TextBlock Text="Статус подключения:" Margin="0,0,0,10"/>
+                    <TextBlock x:Name="ConnectionStatus" Text="Отключено" Foreground="Red" FontWeight="Bold" Margin="0,0,0,20"/>
+                    <Button Content="Подключить" Width="100" Height="30" Margin="0,0,0,10" Click="ConnectButton_Click"/>
+                    <Button Content="Отключить" Width="100" Height="30" Margin="0,0,0,10" Click="DisconnectButton_Click"/>
+                    <Button Content="Обновить" Width="100" Height="30" Click="Refresh"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
