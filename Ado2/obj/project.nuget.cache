@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BHgDF4+mpaqsxiHnodafjOEWHUbVBDIwWsrK3zhp5sVTTPtnEE2eZRtY55L3ucTTHzs/Sb+lGIC7UHE1kRPwuA==",
+  "dgSpecHash": "IXm7OPP5AGMyl3YRucyxoopm5xZfgC/oX5CoVUicELEePB2+mn0+jrpwezjs3WcVX8pcbBhk8ASMih7c638GcQ==",
   "success": true,
-  "projectFilePath": "D:\\1STEP\\@Ado\\Ado2\\Ado2.csproj",
+  "projectFilePath": "D:\\1STEP\\@Ado\\Ado.net\\Ado2\\Ado2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solt2\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\solt2\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

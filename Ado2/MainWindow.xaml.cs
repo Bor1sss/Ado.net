@@ -64,6 +64,88 @@ namespace Ado2
 
                     dataGrid1.ItemsSource = dt.DefaultView;
                     dataGrid1.DisplayMemberPath = "Name";
+                   
+                    reader.Close();
+                    GetAllTypes();
+                    GetAllSuppliers();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    command.Dispose();
+
+                }
+            }
+            else
+            {
+                ChangeStatus();
+            }
+        }
+
+
+        private void GetAllTypes()
+        {
+            if (isConnected)
+            {
+                SqlCommand command = new SqlCommand();
+
+                try
+                {
+                    string com = "SELECT Product_Type FROM Product_Types";
+
+                    command.Connection = connect;
+                    isConnected = true;
+
+                    command.CommandText = com;
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    cb1.ItemsSource = dt.DefaultView;
+                    cb1.DisplayMemberPath = "Product_Type";
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    command.Dispose();
+
+                }
+            }
+            else
+            {
+                ChangeStatus();
+            }
+
+        }
+
+
+
+        private void GetAllSuppliers()
+        {
+            if (isConnected)
+            {
+                SqlCommand command = new SqlCommand();
+
+                try
+                {
+                    string com = "SELECT Supplier_Name FROM Suppliers";
+
+                    command.Connection = connect;
+                    isConnected = true;
+
+                    command.CommandText = com;
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    cb2.ItemsSource = dt.DefaultView;
+                    cb2.DisplayMemberPath = "Supplier_Name";
 
                     reader.Close();
                 }
@@ -216,6 +298,7 @@ namespace Ado2
                 connect.Close();
                 connect.Open();
                 MessageBox.Show("Database Refreshed");
+               
             }
             else
             {
@@ -241,7 +324,7 @@ namespace Ado2
         {
             if (isSub&&isConnected)
             {
-                string command = $"SELECT Products.ID AS Product_ID, Products.Product_Name,Product_Types.Product_Type,  Suppliers.Supplier_Name, Suppliers.Supplier_Address FROM Products JOIN Product_Types ON Products.Product_Type_ID = Product_Types.ID JOIN Suppliers ON Products.Supplier_ID = Suppliers.Supplier_ID WHERE Product_Types.Product_Type = '{textBox1.Text}'";
+                string command = $"SELECT Products.ID AS Product_ID, Products.Product_Name,Product_Types.Product_Type,  Suppliers.Supplier_Name, Suppliers.Supplier_Address FROM Products JOIN Product_Types ON Products.Product_Type_ID = Product_Types.ID JOIN Suppliers ON Products.Supplier_ID = Suppliers.Supplier_ID WHERE Product_Types.Product_Type = '{cb1.Text}'";
                 LoadData(command);
             }
             else
@@ -253,7 +336,7 @@ namespace Ado2
         {
             if (isSub && isConnected)
             {
-                string command = $"SELECT Products.ID AS Product_ID, Products.Product_Name,  Product_Types.Product_Type,  Suppliers.Supplier_Name, Suppliers.Supplier_Address FROM Products JOIN Product_Types ON Products.Product_Type_ID = Product_Types.ID JOIN Suppliers ON Products.Supplier_ID = Suppliers.Supplier_ID WHERE Suppliers.Supplier_Name = '{textBox1.Text}'";
+                string command = $"SELECT Products.ID AS Product_ID, Products.Product_Name,  Product_Types.Product_Type,  Suppliers.Supplier_Name, Suppliers.Supplier_Address FROM Products JOIN Product_Types ON Products.Product_Type_ID = Product_Types.ID JOIN Suppliers ON Products.Supplier_ID = Suppliers.Supplier_ID WHERE Suppliers.Supplier_Name = '{cb2.Text}'";
                 LoadData(command);
             }
             else
@@ -294,13 +377,10 @@ namespace Ado2
             {
                 try
                 {
-                    string[] str = textBox1.Text.Split("\r\n");
-                    if (str.Length >2)
-                    {
-                        string command = $"INSERT INTO Products (Product_Name, Product_Type_ID, Supplier_ID) VALUES ('{str[0]}', (SELECT ID FROM Product_Types WHERE Product_Type = '{str[1]}'), (SELECT Supplier_ID FROM Suppliers WHERE Supplier_Name = '{str[2]}'))";
+                        string[] str = textBox1.Text.Split("\r\n"); 
+                        string command = $"INSERT INTO Products (Product_Name, Product_Type_ID, Supplier_ID) VALUES ('{str[0]}', (SELECT ID FROM Product_Types WHERE Product_Type = '{cb1.Text}'), (SELECT Supplier_ID FROM Suppliers WHERE Supplier_Name = '{cb2.Text}'))";
                         LoadData(command);
                         RefreshDB(); 
-                    }
                 }
                 catch
                 {
@@ -397,7 +477,7 @@ namespace Ado2
                        
 
                         // Заполняем TextBox данными
-                        textBox1.Text = $"{id}\r\n{productName}\r\n{productType}\r\n{supplierName}";
+                        textBox1.Text = $"{id}\r\n{productName}";
                     }
                     else
                     {
@@ -427,27 +507,26 @@ namespace Ado2
                     try
                     {
                         string[] str = textBox1.Text.Split("\r\n");
-                        if (str.Length > 2)
-                        {
+                    
                             string command = $@"
                                    IF EXISTS (
                                         SELECT 1 
                                         FROM Suppliers 
                                         WHERE               
-                                            Supplier_ID = (SELECT Supplier_ID FROM Suppliers WHERE Supplier_Name = '{str[3]}')
+                                            Supplier_ID = (SELECT Supplier_ID FROM Suppliers WHERE Supplier_Name = '{cb2.Text}')
                                     )
                                     AND EXISTS (
                                         SELECT 1 
                                         FROM Product_Types
                                         WHERE 
-                                            ID = (SELECT ID FROM Product_Types WHERE Product_Type = '{str[2]}')
+                                            ID = (SELECT ID FROM Product_Types WHERE Product_Type = '{cb1.Text}')
                                     )
                                     BEGIN
                                         UPDATE Products 
                                         SET 
                                             Product_Name = '{str[1]}',
-                                            Product_Type_ID = (SELECT ID FROM Product_Types WHERE Product_Type = '{str[2]}'),
-                                            Supplier_ID = (SELECT Supplier_ID FROM Suppliers WHERE Supplier_Name = '{str[3]}') 
+                                            Product_Type_ID = (SELECT ID FROM Product_Types WHERE Product_Type = '{cb1.Text}'),
+                                            Supplier_ID = (SELECT Supplier_ID FROM Suppliers WHERE Supplier_Name = '{cb2.Text}') 
                                         WHERE ID = {str[0]}
                                     END
                                     ELSE
@@ -456,7 +535,7 @@ namespace Ado2
                                     END";
                             LoadData(command);
                             RefreshDB();
-                        }
+                     
 
 
                     }
