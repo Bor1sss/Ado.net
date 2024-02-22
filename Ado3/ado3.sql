@@ -1,5 +1,5 @@
 use ado3
-
+create database ado3
 
 CREATE TABLE ProductTypes (
     ProductTypeID INT IDENTITY(1,1) PRIMARY KEY,
@@ -106,37 +106,39 @@ INSERT INTO Sales (ProductID, SalesManagerID, CustomerID, QuantitySold, UnitPric
 (10, 10, 10, 150, 0.50, '2024-02-27');
 
 
-
 CREATE PROCEDURE GetAllInfo
 AS
 BEGIN
-SELECT
-    P.ProductID,
-    P.ProductName,
-    PT.TypeName AS ProductType,
-    P.Quantity,
-    P.CostPrice,
-    SM.ManagerName AS SalesManager,
-    C.CustomerCompanyName,
-    S.QuantitySold,
-    S.UnitPrice,
-    S.SaleDate
-FROM
-    Products P
-INNER JOIN
-    ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
-INNER JOIN
-    Sales S ON P.ProductID = S.ProductID
-INNER JOIN
-    SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
-INNER JOIN
-    Customers C ON S.CustomerID = C.CustomerID;
+ SELECT
+
+        P.ProductID,
+        P.ProductName,
+        PT.TypeName AS ProductType,
+        P.Quantity,
+        P.CostPrice,
+		S.SaleID,
+        SM.ManagerName AS SalesManager,
+        C.CustomerCompanyName,
+        S.QuantitySold,
+        S.UnitPrice,
+        S.SaleDate
+    FROM
+        Products P
+    INNER JOIN
+        ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
+    LEFT JOIN
+        Sales S ON P.ProductID = S.ProductID
+    LEFT JOIN
+        SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
+    LEFT JOIN
+        Customers C ON S.CustomerID = C.CustomerID;
 END;
+
 
 Create Procedure GetProductTypes
 As
 begin 
-	Select TypeName From ProductTypes
+	Select * From ProductTypes
 End;
 
 Create Procedure GetSalesManegers
@@ -337,7 +339,7 @@ BEGIN
         C.CustomerCompanyName = @CustomerCompanyName;
 END;
 
-EXEC GetProductsByCustomerCompany @CustomerCompanyName = 'ООО "Клиент1"';
+
 
 
 
@@ -385,3 +387,307 @@ BEGIN
         PT.TypeName;
 END;
 
+
+
+
+
+
+
+
+CREATE PROCEDURE InsertNewProduct
+    @ProductName VARCHAR(255),
+    @ProductTypeName VARCHAR(50),
+    @Quantity INT,
+    @CostPrice DECIMAL(10, 2)
+AS
+BEGIN
+    DECLARE @ProductTypeID INT;
+    SELECT @ProductTypeID = ProductTypeID
+    FROM ProductTypes
+    WHERE TypeName = @ProductTypeName;
+    IF @ProductTypeID IS NOT NULL
+    BEGIN
+       
+        INSERT INTO Products (ProductName, ProductTypeID, Quantity, CostPrice)
+        VALUES (@ProductName, @ProductTypeID, @Quantity, @CostPrice);
+    END
+    ELSE
+    BEGIN
+        PRINT 'Тип канцтовара не найден.';
+    END
+END;
+
+
+
+CREATE PROCEDURE InsertNewProductType
+    @ProductTypeName VARCHAR(50)
+AS
+BEGIN
+    INSERT INTO ProductTypes (TypeName)
+    VALUES (@ProductTypeName);
+END;
+
+
+
+
+
+CREATE PROCEDURE InsertNewSalesManager
+    @ManagerName VARCHAR(255)
+AS
+BEGIN
+    INSERT INTO SalesManagers (ManagerName)
+    VALUES (@ManagerName);
+END;
+
+
+
+CREATE PROCEDURE InsertNewCustomer
+    @CustomerCompanyName VARCHAR(255)
+AS
+BEGIN
+    INSERT INTO Customers (CustomerCompanyName)
+    VALUES (@CustomerCompanyName);
+END;
+
+
+
+
+CREATE PROCEDURE UpdateProductInfo
+    @ProductID INT,
+    @NewProductName VARCHAR(255),
+    @NewProductTypeID INT,
+    @NewQuantity INT,
+    @NewCostPrice DECIMAL(10, 2)
+AS
+BEGIN
+    UPDATE Products
+    SET
+        ProductName = @NewProductName,
+        ProductTypeID = @NewProductTypeID,
+        Quantity = @NewQuantity,
+        CostPrice = @NewCostPrice
+    WHERE
+        ProductID = @ProductID;
+END;
+
+
+Select*from ProductTypes
+CREATE PROCEDURE UpdateSalesData
+    @SaleID INT,
+    @ProductID INT,
+    @SalesManagerID INT,
+    @CustomerID INT,
+    @QuantitySold INT,
+    @UnitPrice DECIMAL(10, 2),
+    @SaleDate DATE
+AS
+BEGIN
+    UPDATE Sales
+    SET
+        ProductID = @ProductID,
+        SalesManagerID = @SalesManagerID,
+        CustomerID = @CustomerID,
+        QuantitySold = @QuantitySold,
+        UnitPrice = @UnitPrice,
+        SaleDate = @SaleDate
+    WHERE
+        SaleID = @SaleID;
+END;
+
+
+
+CREATE PROCEDURE ShowCustomerCompanies
+AS
+BEGIN
+    SELECT * FROM Customers;
+END;
+
+
+CREATE PROCEDURE UpdateCustomerCompany
+    @CustomerID INT,
+    @NewCompanyName VARCHAR(255)
+AS
+BEGIN
+    -- Просто обновляем название фирмы покупателя
+    UPDATE Customers
+    SET CustomerCompanyName = @NewCompanyName
+    WHERE CustomerID = @CustomerID;
+
+  
+END;
+
+CREATE PROCEDURE UpdateProductType
+    @ProductTypeID INT,
+    @NewProductTypeName VARCHAR(50)
+AS
+BEGIN
+    -- Просто обновляем название типа канцтовара
+    UPDATE ProductTypes
+    SET TypeName = @NewProductTypeName
+    WHERE ProductTypeID = @ProductTypeID;
+
+END;
+
+
+CREATE PROCEDURE DeleteProductAndSales
+    @ProductID INT
+AS
+BEGIN
+     DELETE FROM Sales
+    WHERE ProductID = @ProductID;
+
+    DELETE FROM Products
+    WHERE ProductID = @ProductID;
+
+ 
+
+END;
+
+
+
+CREATE PROCEDURE DeleteSalesManager
+    @SalesManagerID INT
+AS
+BEGIN
+    -- Удаляем менеджера по продажам по указанному SalesManagerID
+    DELETE FROM SalesManagers
+    WHERE SalesManagerID = @SalesManagerID;
+
+   
+END;
+
+CREATE PROCEDURE DeleteCustomerCompany
+    @CustomerID INT
+AS
+BEGIN
+    -- Удаляем фирму покупателя по указанному CustomerID
+    DELETE FROM Customers
+    WHERE CustomerID = @CustomerID;
+
+  
+END;
+CREATE PROCEDURE DeleteProductType
+    @ProductTypeID INT
+AS
+BEGIN
+    -- Удаляем тип канцтовара по указанному ProductTypeID
+    DELETE FROM ProductTypes
+    WHERE ProductTypeID = @ProductTypeID;
+
+  
+END;
+
+
+
+CREATE PROCEDURE GetTopSalesManager
+AS
+BEGIN
+    SELECT TOP 1
+        SM.SalesManagerID,
+        SM.ManagerName,
+        SUM(S.QuantitySold) AS TotalQuantitySold
+    FROM
+        Sales S
+    INNER JOIN
+        SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
+    GROUP BY
+        SM.SalesManagerID, SM.ManagerName
+    ORDER BY
+        TotalQuantitySold DESC;
+END;
+
+
+
+CREATE PROCEDURE GetTopProfitManager
+AS
+BEGIN
+    SELECT TOP 1
+        SM.SalesManagerID,
+        SM.ManagerName,
+        SUM(S.QuantitySold * S.UnitPrice) AS TotalProfit
+    FROM
+        Sales S
+    INNER JOIN
+        SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
+    GROUP BY
+        SM.SalesManagerID, SM.ManagerName
+    ORDER BY
+        TotalProfit DESC;
+END;
+
+
+
+CREATE PROCEDURE GetTopCustomerByTotalAmount
+AS
+BEGIN
+    SELECT TOP 1
+        C.CustomerID,
+        C.CustomerCompanyName,
+        SUM(S.QuantitySold * S.UnitPrice) AS TotalAmount
+    FROM
+        Sales S
+    INNER JOIN
+        Customers C ON S.CustomerID = C.CustomerID
+    GROUP BY
+        C.CustomerID, C.CustomerCompanyName
+    ORDER BY
+        TotalAmount DESC;
+END;
+
+
+
+CREATE PROCEDURE GetTopProductTypeByQuantitySold
+AS
+BEGIN
+    SELECT TOP 1
+        PT.ProductTypeID,
+        PT.TypeName AS ProductType,
+        SUM(S.QuantitySold) AS TotalQuantitySold
+    FROM
+        Products P
+    INNER JOIN
+        ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
+    INNER JOIN
+        Sales S ON P.ProductID = S.ProductID
+    GROUP BY
+        PT.ProductTypeID, PT.TypeName
+    ORDER BY
+        TotalQuantitySold DESC;
+END;
+
+
+CREATE PROCEDURE GetTopSellingProducts
+AS
+BEGIN
+    SELECT TOP 1
+        P.ProductName,
+        SUM(S.QuantitySold) AS TotalQuantitySold
+    FROM
+        Products P
+    INNER JOIN
+        Sales S ON P.ProductID = S.ProductID
+    GROUP BY
+        P.ProductName
+    ORDER BY
+        TotalQuantitySold DESC;
+END;
+
+
+CREATE PROCEDURE GetProductsNotSoldForDays
+    @DaysThreshold INT
+AS
+BEGIN
+    SELECT
+        P.ProductName
+    FROM
+        Products P
+    WHERE
+        P.ProductID NOT IN (
+            SELECT DISTINCT
+                S.ProductID
+            FROM
+                Sales S
+            WHERE
+                DATEDIFF(DAY, S.SaleDate, GETDATE()) <= @DaysThreshold
+        );
+END;

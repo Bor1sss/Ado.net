@@ -17,6 +17,7 @@
                     <MenuItem Header="Вся инфа" Click="ShowAllInfo"></MenuItem>
                     <MenuItem Header="Все типы" Click="ShowAllTypes"></MenuItem>
                     <MenuItem Header="Все менеджеры" Click="ShowAllManagers"></MenuItem>
+                    <MenuItem Header="Все комании" Click="ShowCustomerCompanies"></MenuItem>
                     <Separator />
                     <MenuItem Header="Показать max проданных" Click="ShowMaxQuantity"></MenuItem>
                     <MenuItem Header="Показать min проданных" Click="ShowMinQuantity"></MenuItem>
@@ -24,7 +25,7 @@
 
                 </MenuItem>
                 <MenuItem Header="Меню2">
-                    <MenuItem Header="Показать по типу" IsCheckable="True" Click="ShowProductsByType"></MenuItem>
+                    <MenuItem Header="Показать по типу" Click="ShowProductsByType"></MenuItem>
                     <MenuItem Header="Показать по Менеджеру" Click="ShowProductsBySaleManager"></MenuItem>
                     <MenuItem Header="Показать по фирме" Click="ShowProductsByCompany"></MenuItem>
                     <MenuItem Header="Показать недавнюю продажу" Click="ShowLatestSale"></MenuItem>
@@ -32,16 +33,21 @@
 
                 </MenuItem>
                 <MenuItem Header="Добавление">
-                 
-
-
+                    <MenuItem Header="Добавить новый товар" Click="InsertNewProduct"></MenuItem>
+                    <MenuItem Header="Добавить новый тип товара" Click="InsertProductType"></MenuItem>
+                    <MenuItem Header="Добавить нового Менеджера" Click="InsertSaleManager"></MenuItem>
+                    <MenuItem Header="Добавить новую компаню покупателя" Click="InsertCustomer"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Обновления">
-                   
+                    <MenuItem Header="Подтвердить Обнововление" Click="UpdateProductInfo2"></MenuItem>
                 </MenuItem>
                 <Separator />
-                <MenuItem Header="Обновления2">
-                   
+                <MenuItem Header="Показать">
+                    <MenuItem Header="Показать информацию о менеджере с наибольшим количеством продаж по количеству единиц" Click="GetTopSalesManager"></MenuItem>
+                    <MenuItem Header="Показать информацию о менеджере по продажам с наибольшей общей суммой прибыли;" Click="GetTopProfitManager"></MenuItem>
+                    <MenuItem Header="Показать информацию о" Click="GetTopCustomerByTotalAmount"></MenuItem>
+                    <MenuItem Header="Показать информацию о с наибольшим количеством продаж по единицам;" Click="GetTopProductTypeByQuantitySold"></MenuItem>
+                    <MenuItem Header="■ Показать название канцтоваров, которые не продавались заданное количество дней." Click="GetProductsNotSoldForDays"></MenuItem>
                 </MenuItem>
             </Menu>
 
@@ -50,8 +56,8 @@
             <DataGrid Height="300px" x:Name="dataGrid1">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
-                        
-
+                        <MenuItem Tag="Up1" Header="Обновить" Click="UpdateProductInfo"/>
+                        <MenuItem Tag="Up1" Header="Delete" Click="Delete"/>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
             </DataGrid>
@@ -66,9 +72,9 @@
                     <TextBox x:Name="textBox1" Height="50px" Width="300px" Margin="0px 20px 0px 0px" AcceptsReturn="True"></TextBox>
                     <StackPanel HorizontalAlignment="Left" Margin="20px 5px 5px 0px">
                         <StackPanel>
-                        <ComboBox x:Name="cb1" Width="100px"></ComboBox>
-                        <ComboBox x:Name="cb2" Width="100px"></ComboBox>
-                        <ComboBox x:Name="cb3" Width="100px"></ComboBox>
+                        <ComboBox x:Name="cb1" Width="100px" SelectionChanged="cb1_SelectionChanged"></ComboBox>
+                        <ComboBox x:Name="cb2" Width="100px" SelectionChanged="cb2_SelectionChanged"></ComboBox>
+                        <ComboBox x:Name="cb3" Width="100px" SelectionChanged="cb3_SelectionChanged"></ComboBox>
                         </StackPanel>
                         
                     </StackPanel>
