@@ -27,6 +27,7 @@ namespace Ado2
         SqlConnection connect = new SqlConnection(@"Initial Catalog=Ado2_1;Data Source=DESKTOP-BORIS;Integrated Security=SSPI;TrustServerCertificate=true");
         bool isConnected = false;
         bool isSub =false;
+        DataSet dataSet = new DataSet();
         public MainWindow()
         {
             InitializeComponent();
@@ -46,42 +47,34 @@ namespace Ado2
                 ConnectionStatus.Text = "Отключенно";
             }
         }
-        public void LoadData(string com)
+        public void LoadData(string query)
         {
-            if (isConnected)
-            {
-                SqlCommand command = new SqlCommand();
-
-                try
-                {
-                    command.Connection = connect;
-                    isConnected = true;
-
-                    command.CommandText = com;
-                    SqlDataReader reader = command.ExecuteReader();
-                    DataTable dt = new DataTable();
-                    dt.Load(reader);
-
-                    dataGrid1.ItemsSource = dt.DefaultView;
-                    dataGrid1.DisplayMemberPath = "Name";
-                   
-                    reader.Close();
-                    GetAllTypes();
-                    GetAllSuppliers();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    command.Dispose();
-
-                }
-            }
-            else
+            if (!isConnected)
             {
                 ChangeStatus();
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(@"Initial Catalog=Ado2_1;Data Source=DESKTOP-BORIS;Integrated Security=SSPI;TrustServerCertificate=true"))
+                {
+                    connection.Open();
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+                    {
+                        dataSet.Clear();
+                        adapter.Fill(dataSet, "TableName"); 
+
+                        dataGrid1.ItemsSource = dataSet.Tables["TableName"].DefaultView;
+                        GetAllTypes();
+                        GetAllSuppliers();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -90,73 +83,50 @@ namespace Ado2
         {
             if (isConnected)
             {
-                SqlCommand command = new SqlCommand();
-
                 try
                 {
                     string com = "SELECT Product_Type FROM Product_Types";
 
-                    command.Connection = connect;
-                    isConnected = true;
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(com, connect))
+                    {
+                        dataSet.Tables["ProductTypes"].Clear(); // Очищаем существующие данные
+                        adapter.Fill(dataSet, "ProductTypes"); // Получаем данные из базы данных
+                    }
 
-                    command.CommandText = com;
-                    SqlDataReader reader = command.ExecuteReader();
-                    DataTable dt = new DataTable();
-                    dt.Load(reader);
-                    cb1.ItemsSource = dt.DefaultView;
+                    cb1.ItemsSource = dataSet.Tables["ProductTypes"].DefaultView;
                     cb1.DisplayMemberPath = "Product_Type";
-
-                    reader.Close();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    command.Dispose();
-
                 }
             }
             else
             {
                 ChangeStatus();
             }
-
         }
-
-
 
         private void GetAllSuppliers()
         {
             if (isConnected)
             {
-                SqlCommand command = new SqlCommand();
-
                 try
                 {
                     string com = "SELECT Supplier_Name FROM Suppliers";
 
-                    command.Connection = connect;
-                    isConnected = true;
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(com, connect))
+                    {
+                        dataSet.Tables["Suppliers"].Clear();
+                        adapter.Fill(dataSet, "Suppliers"); 
+                    }
 
-                    command.CommandText = com;
-                    SqlDataReader reader = command.ExecuteReader();
-                    DataTable dt = new DataTable();
-                    dt.Load(reader);
-                    cb2.ItemsSource = dt.DefaultView;
+                    cb2.ItemsSource = dataSet.Tables["Suppliers"].DefaultView;
                     cb2.DisplayMemberPath = "Supplier_Name";
-
-                    reader.Close();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    command.Dispose();
-
                 }
             }
             else
@@ -164,6 +134,7 @@ namespace Ado2
                 ChangeStatus();
             }
         }
+
         private void ShowAllData_Click(object sender, RoutedEventArgs e)
         {
             if (isConnected)

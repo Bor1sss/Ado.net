@@ -52,3 +52,15 @@ D:\1STEP\@Ado\Ado.net\Ado2\obj\Debug\netcoreapp3.1\Ado2.csproj.CopyComplete
 D:\1STEP\@Ado\Ado.net\Ado2\obj\Debug\netcoreapp3.1\Ado2.dll
 D:\1STEP\@Ado\Ado.net\Ado2\obj\Debug\netcoreapp3.1\Ado2.pdb
 D:\1STEP\@Ado\Ado.net\Ado2\obj\Debug\netcoreapp3.1\Ado2.genruntimeconfig.cache
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+D:\1STEP\@Ado\Ado.net\Ado2\bin\Debug\netcoreapp3.1\System.Text.Json.dll
