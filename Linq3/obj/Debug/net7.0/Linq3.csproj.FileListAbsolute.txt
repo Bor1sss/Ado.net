@@ -1,0 +1,14 @@
+D:\1STEP\@Ado\Ado.net\Linq3\bin\Debug\net7.0\Linq3.exe
+D:\1STEP\@Ado\Ado.net\Linq3\bin\Debug\net7.0\Linq3.deps.json
+D:\1STEP\@Ado\Ado.net\Linq3\bin\Debug\net7.0\Linq3.runtimeconfig.json
+D:\1STEP\@Ado\Ado.net\Linq3\bin\Debug\net7.0\Linq3.dll
+D:\1STEP\@Ado\Ado.net\Linq3\bin\Debug\net7.0\Linq3.pdb
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\Linq3.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\Linq3.AssemblyInfoInputs.cache
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\Linq3.AssemblyInfo.cs
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\Linq3.csproj.CoreCompileInputs.cache
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\Linq3.dll
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\refint\Linq3.dll
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\Linq3.pdb
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\Linq3.genruntimeconfig.cache
+D:\1STEP\@Ado\Ado.net\Linq3\obj\Debug\net7.0\ref\Linq3.dll
