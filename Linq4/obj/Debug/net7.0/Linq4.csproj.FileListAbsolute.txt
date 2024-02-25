@@ -1,0 +1,14 @@
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\Linq4.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\Linq4.AssemblyInfoInputs.cache
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\Linq4.AssemblyInfo.cs
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\Linq4.csproj.CoreCompileInputs.cache
+D:\1STEP\@Ado\Ado.net\Linq4\bin\Debug\net7.0\Linq4.exe
+D:\1STEP\@Ado\Ado.net\Linq4\bin\Debug\net7.0\Linq4.deps.json
+D:\1STEP\@Ado\Ado.net\Linq4\bin\Debug\net7.0\Linq4.runtimeconfig.json
+D:\1STEP\@Ado\Ado.net\Linq4\bin\Debug\net7.0\Linq4.dll
+D:\1STEP\@Ado\Ado.net\Linq4\bin\Debug\net7.0\Linq4.pdb
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\Linq4.dll
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\refint\Linq4.dll
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\Linq4.pdb
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\Linq4.genruntimeconfig.cache
+D:\1STEP\@Ado\Ado.net\Linq4\obj\Debug\net7.0\ref\Linq4.dll
