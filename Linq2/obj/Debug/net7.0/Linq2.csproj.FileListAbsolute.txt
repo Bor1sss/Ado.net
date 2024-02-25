@@ -1,0 +1,14 @@
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\Linq2.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\Linq2.AssemblyInfoInputs.cache
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\Linq2.AssemblyInfo.cs
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\Linq2.csproj.CoreCompileInputs.cache
+D:\1STEP\@Ado\Ado.net\Linq2\bin\Debug\net7.0\Linq2.exe
+D:\1STEP\@Ado\Ado.net\Linq2\bin\Debug\net7.0\Linq2.deps.json
+D:\1STEP\@Ado\Ado.net\Linq2\bin\Debug\net7.0\Linq2.runtimeconfig.json
+D:\1STEP\@Ado\Ado.net\Linq2\bin\Debug\net7.0\Linq2.dll
+D:\1STEP\@Ado\Ado.net\Linq2\bin\Debug\net7.0\Linq2.pdb
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\Linq2.dll
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\refint\Linq2.dll
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\Linq2.pdb
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\Linq2.genruntimeconfig.cache
+D:\1STEP\@Ado\Ado.net\Linq2\obj\Debug\net7.0\ref\Linq2.dll
