@@ -107,7 +107,16 @@ namespace Linq2
                         .Where(x => x.dep.City == "Kyiv" && x.emp.Age>23)
                         .Select(x => new { x.emp.FirstName, x.emp.LastName });
 
-            foreach (var item in Task4)
+          
+
+            var Task4_2 = from emp in employees
+                        join department in departments on emp.DepId equals department.Id
+                        where department.City == "Kyiv"
+                        where emp.Age > 23
+                        select new { emp.FirstName, emp.LastName };
+
+
+            foreach (var item in Task4_2)
             {
                 Console.WriteLine(item);
             }
