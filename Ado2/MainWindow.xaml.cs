@@ -64,7 +64,7 @@ namespace Ado2
                     using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
                     {
                         dataSet.Clear();
-                        adapter.Fill(dataSet, "TableName"); 
+                        adapter.Fill(dataSet, "TableName");
 
                         dataGrid1.ItemsSource = dataSet.Tables["TableName"].DefaultView;
                         GetAllTypes();
@@ -89,8 +89,8 @@ namespace Ado2
 
                     using (SqlDataAdapter adapter = new SqlDataAdapter(com, connect))
                     {
-                        dataSet.Tables["ProductTypes"].Clear(); // Очищаем существующие данные
-                        adapter.Fill(dataSet, "ProductTypes"); // Получаем данные из базы данных
+                       
+                        adapter.Fill(dataSet, "ProductTypes"); 
                     }
 
                     cb1.ItemsSource = dataSet.Tables["ProductTypes"].DefaultView;
@@ -117,7 +117,7 @@ namespace Ado2
 
                     using (SqlDataAdapter adapter = new SqlDataAdapter(com, connect))
                     {
-                        dataSet.Tables["Suppliers"].Clear();
+                    
                         adapter.Fill(dataSet, "Suppliers"); 
                     }
 
