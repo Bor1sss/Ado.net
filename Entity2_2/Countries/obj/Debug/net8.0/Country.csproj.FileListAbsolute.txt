@@ -1,0 +1,12 @@
+D:\1STEP\@Ado\Ado.net\Countries\bin\Debug\net8.0\Country.deps.json
+D:\1STEP\@Ado\Ado.net\Countries\bin\Debug\net8.0\Country.dll
+D:\1STEP\@Ado\Ado.net\Countries\bin\Debug\net8.0\Country.pdb
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\Country.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\Country.AssemblyInfoInputs.cache
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\Country.AssemblyInfo.cs
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\Country.csproj.CoreCompileInputs.cache
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\Country.sourcelink.json
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\Country.dll
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\refint\Country.dll
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\Country.pdb
+D:\1STEP\@Ado\Ado.net\Countries\obj\Debug\net8.0\ref\Country.dll

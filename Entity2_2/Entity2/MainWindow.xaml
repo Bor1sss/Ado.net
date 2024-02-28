@@ -1,0 +1,72 @@
+﻿<Window x:Class="Entity2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Entity2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="514" MinHeight="550" MinWidth="512">
+    <Grid>
+
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Stretch">
+            <Menu>
+                <MenuItem Header="Меню1">
+                    <MenuItem Header="Вся информация " Click="ShowAllData_Click"/>
+                    <MenuItem Header="Все страны" Click="Show_CountryName"/>
+                    <MenuItem Header="Все сталицы" Click="Show_Capital"/>
+                    <MenuItem Header="Все страны по именни" Click="Show_CountriesFind"/>
+                    <MenuItem Header="Все страны по size" Click="Show_CountriesFindSize"/>
+                    <MenuItem Header="Show_CountriesHaveAE" Click="Show_CountriesHaveAE"/>
+                    <MenuItem Header="Show_CountriesStartWithA" Click="Show_CountriesStartWithA"/>
+                    <MenuItem Header="Show_CountriesWithDiapasonSize" Click="Show_CountriesWithDiapasonSize"/>
+                    <MenuItem Header="Show_CountriesWithPopulation" Click="Show_CountriesWithPopulation"/>
+                 
+
+                    <Separator />
+                   
+
+
+                </MenuItem>
+                <MenuItem Header="Меню2">
+                 
+
+                </MenuItem>
+                <MenuItem Header="Добавление">
+                   
+
+
+                </MenuItem>
+                <MenuItem Header="Обновления">
+                   
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Обновления2">
+               
+                </MenuItem>
+            </Menu>
+
+
+
+            <DataGrid Height="300px" x:Name="dataGrid1">
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                      
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Orientation="Vertical">
+
+                    <TextBox x:Name="textBox1" Height="80px" Width="300px" Margin="0px 20px 0px 0px" AcceptsReturn="True"></TextBox>
+                    <ComboBox x:Name="cb1" Width="300px"></ComboBox>
+                    <Button x:Name="Sub"  Width="150px" Height="20px" Margin="0px 10px" Content="Submit" Click="Submit"></Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
