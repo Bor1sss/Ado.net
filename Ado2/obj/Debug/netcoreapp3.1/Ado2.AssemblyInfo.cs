@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ado2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d7e02542a49e597baa8a0aeb61336eecc711449")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb4b8d9d193799c7ffd42d60538799aeef7531c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ado2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ado2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
