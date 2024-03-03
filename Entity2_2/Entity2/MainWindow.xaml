@@ -20,28 +20,21 @@
                     <MenuItem Header="Show_CountriesStartWithA" Click="Show_CountriesStartWithA"/>
                     <MenuItem Header="Show_CountriesWithDiapasonSize" Click="Show_CountriesWithDiapasonSize"/>
                     <MenuItem Header="Show_CountriesWithPopulation" Click="Show_CountriesWithPopulation"/>
-                 
+
 
                     <Separator />
-                   
 
-
-                </MenuItem>
-                <MenuItem Header="Меню2">
-                 
-
-                </MenuItem>
-                <MenuItem Header="Добавление">
-                   
 
 
                 </MenuItem>
-                <MenuItem Header="Обновления">
-                   
+                <MenuItem Header="Добавить">
+                    <MenuItem Header="Add " Click="Add_Info"/>
+
                 </MenuItem>
+
                 <Separator />
-                <MenuItem Header="Обновления2">
-               
+                <MenuItem Header="Обновления">
+                    <MenuItem Header="Update" Click="Update"/>
                 </MenuItem>
             </Menu>
 
@@ -50,7 +43,8 @@
             <DataGrid Height="300px" x:Name="dataGrid1">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
-                      
+                        <MenuItem Header="Обновить информацию" Click="Upgrade_InfoClick"/>
+                        <MenuItem Header="Удалить" Click="Delete"/>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
             </DataGrid>
@@ -58,11 +52,24 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"></ColumnDefinition>
-                
+
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Orientation="Vertical">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0px 20px 10px 0px">
+                            <TextBlock Text="ID" HorizontalAlignment="Right"></TextBlock>
+                            <TextBlock Text="Name" HorizontalAlignment="Right"></TextBlock>
+                            <TextBlock Text="Capital" HorizontalAlignment="Right"></TextBlock>
+                            <TextBlock Text="Population" HorizontalAlignment="Right"></TextBlock>
+                            <TextBlock Text="Size" HorizontalAlignment="Right"></TextBlock>
+                        </StackPanel>
 
-                    <TextBox x:Name="textBox1" Height="80px" Width="300px" Margin="0px 20px 0px 0px" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Column="1" x:Name="textBox1" Height="80px" Margin="0,20,10,0" AcceptsReturn="True" RenderTransformOrigin="0.51,0.526"/>
+                    </Grid>
                     <ComboBox x:Name="cb1" Width="300px"></ComboBox>
                     <Button x:Name="Sub"  Width="150px" Height="20px" Margin="0px 10px" Content="Submit" Click="Submit"></Button>
                 </StackPanel>

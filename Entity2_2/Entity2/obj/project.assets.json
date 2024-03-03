@@ -3399,11 +3399,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1STEP\\@Ado\\Ado.net\\Entity2\\Entity2.csproj",
+      "projectUniqueName": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Entity2\\Entity2.csproj",
       "projectName": "Entity2",
-      "projectPath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2\\Entity2.csproj",
+      "projectPath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Entity2\\Entity2.csproj",
       "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-      "outputPath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2\\obj\\",
+      "outputPath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Entity2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3425,8 +3425,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\1STEP\\@Ado\\Ado.net\\Region\\CountryContext.csproj": {
-              "projectPath": "D:\\1STEP\\@Ado\\Ado.net\\Region\\CountryContext.csproj"
+            "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Region\\CountryContext.csproj": {
+              "projectPath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Region\\CountryContext.csproj"
             }
           }
         }

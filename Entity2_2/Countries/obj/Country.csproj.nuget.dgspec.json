@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1STEP\\@Ado\\Ado.net\\Countries\\Country.csproj": {}
+    "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Countries\\Country.csproj": {}
   },
   "projects": {
-    "D:\\1STEP\\@Ado\\Ado.net\\Countries\\Country.csproj": {
+    "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Countries\\Country.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1STEP\\@Ado\\Ado.net\\Countries\\Country.csproj",
+        "projectUniqueName": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Countries\\Country.csproj",
         "projectName": "Country",
-        "projectPath": "D:\\1STEP\\@Ado\\Ado.net\\Countries\\Country.csproj",
+        "projectPath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Countries\\Country.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "D:\\1STEP\\@Ado\\Ado.net\\Countries\\obj\\",
+        "outputPath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Countries\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

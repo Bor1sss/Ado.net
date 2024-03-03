@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqjbwtrjSaqGY8guR6pRmhffD01Rj4FORV8wLgVvnRWh/DA0Le5FwpR0+DiYnObU3lHV3o/DhKYYGFJ2d06laA==",
+  "dgSpecHash": "BqCjqn6IAD88yLAEGITl7ODT8xWv4wKMhjYy70Sc9EqOYdCvMncoFHZkXK9ezG4hm1P+NkSfI5B9DzL2KqyI5Q==",
   "success": true,
-  "projectFilePath": "D:\\1STEP\\@Ado\\Ado.net\\Region\\CountryContext.csproj",
+  "projectFilePath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Region\\CountryContext.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solt2\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\solt2\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

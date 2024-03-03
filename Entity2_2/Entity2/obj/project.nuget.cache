@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GhqjET0FrAdHoglUJA8zWRVSPjDTdP3a9XjLvlZN6xtzGumxlKNTw+WHM+W71mPXClrMb23o0l6lQjYzcbR9MA==",
+  "dgSpecHash": "eIyWCv+0j5OHntVsfO5Ndve80d1rxMbycaVy6uJuQHOrnBkcOk5jzXjevy6xEN9BKyG4DH/aTAy8lMtkUeAT8A==",
   "success": true,
-  "projectFilePath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2\\Entity2.csproj",
+  "projectFilePath": "D:\\1STEP\\@Ado\\Ado.net\\Entity2_2\\Entity2\\Entity2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solt2\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\solt2\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
