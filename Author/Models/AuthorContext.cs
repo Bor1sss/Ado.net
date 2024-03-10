@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Author.Models
 {
-    public class AuthorContext:DbContext
+    public partial class AuthorContext:DbContext
     {
 
         static DbContextOptions<AuthorContext> _options;
@@ -29,7 +29,7 @@ namespace Author.Models
         {
             if (Database.EnsureCreated())
             {
-                Author shakespeare = new Author { Name = "William Shakespeare" };
+               /* Author shakespeare = new Author { Name = "William Shakespeare" };
                 Author dostoevsky = new Author { Name = "Fyodor Dostoevsky" };
                 Author tolkien = new Author { Name = "J.R.R. Tolkien" };
 
@@ -46,20 +46,42 @@ namespace Author.Models
                 Books?.Add(new Book { Name = "The Lord of the Rings", Title = "The Fellowship of the Ring", Author = tolkien });
                 Books?.Add(new Book { Name = "The Hobbit", Title = "The Hobbit, or There and Back Again", Author = tolkien });
 
-                SaveChanges();
+                SaveChanges();*/
             }
         }
 
         public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
          
 
             modelBuilder.Entity<Book>().HasOne(p => p.Author).WithMany(t => t.Books).OnDelete(DeleteBehavior.Cascade);
 
             base.OnModelCreating(modelBuilder);
+        }*/
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Author>(entity =>
+            {
+                entity.HasKey(e => e.Id).HasName("PK_dbo.Authors");
+            });
+
+            modelBuilder.Entity<Book>(entity =>
+            {
+                entity.HasKey(e => e.Id).HasName("PK_dbo.Books");
+
+                entity.HasIndex(e => e.Id, "IX_Authors_Id");
+
+                entity.HasOne(d => d.Author).WithMany(p => p.Books)
+                    .HasForeignKey(d => d.Id)
+                    .HasConstraintName("FK_dbo.Books_dbo.FK_Books_Authors_AuthorId");
+            });
+
+            OnModelCreatingPartial(modelBuilder);
         }
+    
     }
 }
