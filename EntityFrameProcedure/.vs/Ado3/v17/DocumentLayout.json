@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\vm\\vm_components.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:vm\\vm_components.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\model\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:model\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\model\\salesmanagers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:model\\salesmanagers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\vm\\vm_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:vm\\vm_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\model\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:model\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\model\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:model\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|d:\\1step\\@ado\\ado.net\\entityframeprocedure\\model\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0EC500-96C0-41B5-9F6D-B327FDFD464D}|Ado3.csproj|solutionrelative:model\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VM_Components.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\VM\\VM_Components.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Components.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\VM\\VM_Components.cs",
+              "RelativeToolTip": "VM\\VM_Components.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T15:28:57.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Context.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\Context.cs",
+              "RelativeDocumentMoniker": "Model\\Context.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\Context.cs",
+              "RelativeToolTip": "Model\\Context.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAwwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:33:41.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VM_Main.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\VM\\VM_Main.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Main.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\VM\\VM_Main.cs",
+              "RelativeToolTip": "VM\\VM_Main.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wBYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:21:35.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VM_Base.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\VM\\VM_Base.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Base.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\VM\\VM_Base.cs",
+              "RelativeToolTip": "VM\\VM_Base.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:21:34.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Sales.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\Sales.cs",
+              "RelativeDocumentMoniker": "Model\\Sales.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\Sales.cs",
+              "RelativeToolTip": "Model\\Sales.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:15:19.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SalesManagers.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\SalesManagers.cs",
+              "RelativeDocumentMoniker": "Model\\SalesManagers.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\SalesManagers.cs",
+              "RelativeToolTip": "Model\\SalesManagers.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:15:12.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\Customer.cs",
+              "RelativeDocumentMoniker": "Model\\Customer.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\Customer.cs",
+              "RelativeToolTip": "Model\\Customer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:15:05.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductType.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\ProductType.cs",
+              "RelativeDocumentMoniker": "Model\\ProductType.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\ProductType.cs",
+              "RelativeToolTip": "Model\\ProductType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:14:25.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Products.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\Products.cs",
+              "RelativeDocumentMoniker": "Model\\Products.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\EntityFrameProcedure\\Model\\Products.cs",
+              "RelativeToolTip": "Model\\Products.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T09:27:54.662Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
