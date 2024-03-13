@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ado3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11092a88cdf4b11e49a806f42f8b0d5179792ad1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0fc881a637a9ab308dfc1273f47ab34dd95c343")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ado3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ado3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

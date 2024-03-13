@@ -47,10 +47,11 @@ D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.GeneratedMSBuildEditorC
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.AssemblyInfoInputs.cache
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.AssemblyInfo.cs
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.csproj.CoreCompileInputs.cache
-D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.csproj.CopyComplete
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.dll
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\refint\Ado3.dll
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.pdb
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.genruntimeconfig.cache
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\ref\Ado3.dll
 D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.sourcelink.json
+D:\1STEP\@Ado\Ado.net\Ado3\obj\Debug\net7.0-windows\Ado3.csproj.Up2Date
