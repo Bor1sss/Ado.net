@@ -1,0 +1,15 @@
+D:\1STEP\@Ado\Ado.net\ModelStruct\bin\Debug\net8.0\ModelStruct.deps.json
+D:\1STEP\@Ado\Ado.net\ModelStruct\bin\Debug\net8.0\ModelStruct.dll
+D:\1STEP\@Ado\Ado.net\ModelStruct\bin\Debug\net8.0\ModelStruct.pdb
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.csproj.AssemblyReference.cache
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.AssemblyInfoInputs.cache
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.AssemblyInfo.cs
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.csproj.CoreCompileInputs.cache
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.sourcelink.json
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.dll
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\refint\ModelStruct.dll
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.pdb
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ref\ModelStruct.dll
+D:\1STEP\@Ado\Ado.net\ModelStruct\bin\Debug\net8.0\ModelStruct.runtimeconfig.json
+D:\1STEP\@Ado\Ado.net\ModelStruct\obj\Debug\net8.0\ModelStruct.genruntimeconfig.cache

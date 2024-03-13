@@ -1,0 +1,60 @@
+﻿<Window x:Class="MigrationDz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MigrationDz" xmlns:vm="clr-namespace:MigrationDz.VM" d:DataContext="{d:DesignInstance Type=vm:VM_Main}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="505" Width="513">
+    <Grid>
+        <StackPanel>
+        <ListBox Height="240px" ItemsSource="{Binding GameList}" SelectedIndex="{Binding selectedIndex}" x:Name="listBox1" Grid.Row="1" VerticalAlignment="Top"  HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+                       
+                        <TextBlock Text="{Binding Name}" Grid.Column="0"/>
+                        <TextBlock Text="{Binding Realise}" Grid.Column="1"/>
+                        <TextBlock Text="{Binding Copies}" Grid.Column="2"/>
+                        <TextBlock Text="{Binding GameType}" Grid.Column="3"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+            <StackPanel DataContext="{Binding StudioList}">
+                <TextBlock TextAlignment="Center" FontSize="25px">STUDIO</TextBlock>
+                <TextBox x:Name="Studio" Height="50px" Text="{Binding Name}" TextAlignment="Center" FontSize="25px"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="0px 30px" >
+                <TextBlock TextAlignment="Center" FontSize="25px">STYLE</TextBlock>
+                <ListBox x:Name="Style" Height="100px" ItemsSource="{Binding StyleList}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+            
+            <StackPanel Margin="0px 30px" >
+                <TextBlock TextAlignment="Center" FontSize="25px">STYLE</TextBlock>
+                <ListBox x:Name="Type" Height="100px" ItemsSource="{Binding }">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>
