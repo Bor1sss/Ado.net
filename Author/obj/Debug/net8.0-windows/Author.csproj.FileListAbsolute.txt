@@ -75,3 +75,7 @@ D:\1STEP\@Ado\Ado.net\Author\bin\Debug\net8.0-windows\Castle.Core.dll
 D:\1STEP\@Ado\Ado.net\Author\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Proxies.dll
 D:\1STEP\@Ado\Ado.net\Author\obj\Debug\net8.0-windows\V\MainWindow.g.cs
 D:\1STEP\@Ado\Ado.net\Author\obj\Debug\net8.0-windows\V\MainWindow.baml
+D:\1STEP\@Ado\Ado.net\Author\bin\Debug\net8.0-windows\Humanizer.dll
+D:\1STEP\@Ado\Ado.net\Author\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\1STEP\@Ado\Ado.net\Author\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\1STEP\@Ado\Ado.net\Author\bin\Debug\net8.0-windows\Mono.TextTemplating.dll

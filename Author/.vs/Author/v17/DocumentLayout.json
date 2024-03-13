@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\1STEP\\@Ado\\Ado.net\\Author\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|d:\\1step\\@ado\\ado.net\\author\\models\\authorcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:models\\authorcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|d:\\1step\\@ado\\ado.net\\author\\vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\v\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:v\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\vm\\vm_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:vm\\vm_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\vm\\vm_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:vm\\vm_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\vm\\vm_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:vm\\vm_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|d:\\1step\\@ado\\ado.net\\author\\vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\v\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:v\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B50C6D1-4F77-4636-A0B1-C837BCF95933}|Author.csproj|D:\\1STEP\\@Ado\\Ado.net\\Author\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -34,24 +46,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthorContext.cs",
-              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\Models\\AuthorContext.cs",
-              "RelativeDocumentMoniker": "Models\\AuthorContext.cs",
-              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\Models\\AuthorContext.cs",
-              "RelativeToolTip": "Models\\AuthorContext.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAD4vzIAAAAIAAAA",
+              "DocumentIndex": 5,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "Models\\Author.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\Models\\Author.cs",
+              "RelativeToolTip": "Models\\Author.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T18:00:25.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T14:02:51.939Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "VM_Book.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\VM\\VM_Book.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Book.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\VM\\VM_Book.cs",
+              "RelativeToolTip": "VM\\VM_Book.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:03:34.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VM_Base.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\VM\\VM_Base.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Base.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\VM\\VM_Base.cs",
+              "RelativeToolTip": "VM\\VM_Base.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T09:58:38.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T09:28:45.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T09:26:28.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -62,25 +122,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\V\\MainWindow.xaml",
               "RelativeDocumentMoniker": "V\\MainWindow.xaml",
               "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\V\\MainWindow.xaml",
               "RelativeToolTip": "V\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-08T13:42:49.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T13:42:49.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "VM_Main.cs",
               "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\VM\\VM_Main.cs",
               "RelativeDocumentMoniker": "VM\\VM_Main.cs",
               "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\VM\\VM_Main.cs",
               "RelativeToolTip": "VM\\VM_Main.cs",
-              "ViewState": "AQIAAPEBAAAAAAAAAADwv/QBAAAwAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAswFgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T18:16:41.152Z",
               "EditorCaption": ""
@@ -93,23 +152,9 @@
               "RelativeDocumentMoniker": "VM\\VM_Author.cs",
               "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\VM\\VM_Author.cs",
               "RelativeToolTip": "VM\\VM_Author.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T14:02:44.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Author.cs",
-              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Author\\Models\\Author.cs",
-              "RelativeDocumentMoniker": "Models\\Author.cs",
-              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Author\\Models\\Author.cs",
-              "RelativeToolTip": "Models\\Author.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T14:02:51.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T14:02:44.021Z"
             }
           ]
         }
