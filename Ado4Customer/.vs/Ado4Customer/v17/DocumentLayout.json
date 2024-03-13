@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\vm\\vm_components.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:vm\\vm_components.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\vm\\vm_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:vm\\vm_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|d:\\1step\\@ado\\ado.net\\ado4customer\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\ado3.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:ado3.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\model\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:model\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\model\\ado4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07107134-24A7-4A3C-A89A-162931EF4BA1}|Ado4Customer.csproj|solutionrelative:model\\ado4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\View\\MainWindow.xaml",
+              "RelativeToolTip": "View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-13T16:55:53.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:54:10.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VM_Components.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\VM\\VM_Components.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Components.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\VM\\VM_Components.cs",
+              "RelativeToolTip": "VM\\VM_Components.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:48:15.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VM_Main.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\VM\\VM_Main.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Main.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\VM\\VM_Main.cs",
+              "RelativeToolTip": "VM\\VM_Main.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:48:10.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VM_Base.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\VM\\VM_Base.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Base.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\VM\\VM_Base.cs",
+              "RelativeToolTip": "VM\\VM_Base.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:48:00.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ado4Context.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Model\\Ado4Context.cs",
+              "RelativeDocumentMoniker": "Model\\Ado4Context.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Model\\Ado4Context.cs",
+              "RelativeToolTip": "Model\\Ado4Context.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAMwDIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T19:05:05.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-12T19:05:52.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Model\\Product.cs",
+              "RelativeDocumentMoniker": "Model\\Product.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Model\\Product.cs",
+              "RelativeToolTip": "Model\\Product.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBMAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T18:40:19.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductType.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Model\\ProductType.cs",
+              "RelativeDocumentMoniker": "Model\\ProductType.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Model\\ProductType.cs",
+              "RelativeToolTip": "Model\\ProductType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T18:37:47.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ado3.sql",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\ado3.sql",
+              "RelativeDocumentMoniker": "ado3.sql",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\ado3.sql",
+              "RelativeToolTip": "ado3.sql",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-12T18:19:41.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "View\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAIA9wDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T17:33:08.855Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
