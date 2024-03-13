@@ -52,12 +52,8 @@ namespace Ado3.Model
          
             modelBuilder.Entity<Customer>(entity =>
             {
-                entity.HasKey(e => e.Id).HasName("PK_dbo.Customer");
-            
-               
-                entity.HasMany(e => e.Sales)
-                      .WithOne(s => s.Customer)
-                      .HasForeignKey(s => s.CustomerId);
+                entity.HasKey(e => e.Id).HasName("PK_dbo.Customers");
+
             });
 
 

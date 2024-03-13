@@ -21,8 +21,8 @@ namespace Ado3
             {
                 using (var db = new Context())
                 {
-                    var cust = from g in db.Customer
-                                  select g;
+                    var cust = (from g in db.Customer
+                                  select g).ToList();
                     
                     var prod = from st in db.Products
                                 select st;
