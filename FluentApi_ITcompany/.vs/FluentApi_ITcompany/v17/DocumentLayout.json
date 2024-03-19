@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|d:\\1step\\@ado\\ado.net\\fluentapi_itcompany\\vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:vm\\vm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\commands\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:commands\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\v\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:v\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\m\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:m\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\vm\\vm_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:vm\\vm_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\vm\\vm_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:vm\\vm_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\m\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:m\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\m\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC8D60E-64E4-4702-B0B1-376A8041092F}|FluentApi_ITcompany.csproj|solutionrelative:m\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DelegateCommand.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\Commands\\DelegateCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\DelegateCommand.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\Commands\\DelegateCommand.cs",
+              "RelativeToolTip": "Commands\\DelegateCommand.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T18:08:20.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VM_Base.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\VM\\VM_Base.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Base.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\VM\\VM_Base.cs",
+              "RelativeToolTip": "VM\\VM_Base.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T18:08:11.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VM_Main.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\VM\\VM_Main.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Main.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\VM\\VM_Main.cs",
+              "RelativeToolTip": "VM\\VM_Main.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAYwFgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T18:07:59.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VM_Employee.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\VM\\VM_Employee.cs",
+              "RelativeDocumentMoniker": "VM\\VM_Employee.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\VM\\VM_Employee.cs",
+              "RelativeToolTip": "VM\\VM_Employee.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAWwB0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T18:07:30.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Context.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\M\\Context.cs",
+              "RelativeDocumentMoniker": "M\\Context.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\M\\Context.cs",
+              "RelativeToolTip": "M\\Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:54:16.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Position.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\M\\Position.cs",
+              "RelativeDocumentMoniker": "M\\Position.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\M\\Position.cs",
+              "RelativeToolTip": "M\\Position.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:50:11.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\M\\Employee.cs",
+              "RelativeDocumentMoniker": "M\\Employee.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\M\\Employee.cs",
+              "RelativeToolTip": "M\\Employee.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:49:33.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAowDsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T17:45:23.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\V\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "V\\MainWindow.xaml",
+              "ToolTip": "D:\\1STEP\\@Ado\\Ado.net\\FluentApi_ITcompany\\V\\MainWindow.xaml",
+              "RelativeToolTip": "V\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-17T17:30:32.88Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
