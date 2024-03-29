@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado3\\Ado3.csproj": {}
+    "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Dapper1\\Ado3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado3\\Ado3.csproj": {
+    "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Dapper1\\Ado3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado3\\Ado3.csproj",
+        "projectUniqueName": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Dapper1\\Ado3.csproj",
         "projectName": "Ado3",
-        "projectPath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado3\\Ado3.csproj",
+        "projectPath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Dapper1\\Ado3.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado3\\obj\\",
+        "outputPath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Dapper1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

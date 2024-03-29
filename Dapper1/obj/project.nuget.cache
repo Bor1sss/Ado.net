@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "34h/CF+0x0GbRaCuSMxO5nwE/Vtx+nt9bsMDm2VJyZVyoLxHBS0fIS6JgVj1LMP9gfpsAWqI7/ZwcNtZ8zcdpQ==",
+  "dgSpecHash": "8j+STaBEpIZXh39s06wsNpKlRmYLdteLmY9CwKjRN7MNuSJmgLTb6p8Y03lZDHUkwXs4l65C4qeoI4N3gzU9SQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado3\\Ado3.csproj",
+  "projectFilePath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Dapper1\\Ado3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solt2\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\solt2\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

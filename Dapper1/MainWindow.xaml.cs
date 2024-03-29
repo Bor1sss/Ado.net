@@ -1110,8 +1110,25 @@ namespace Ado3
                         dataGrid1.ItemsSource = customers.ToList();
                         dataGrid1.DisplayMemberPath = "Name";
                     }
+                    
                 }
-               
+                else
+                {
+                    using (IDbConnection db = new SqlConnection(connectionString))
+                    {
+
+                        string query = @"
+                                        SELECT 
+                                             *
+                                        FROM 
+                                            Type";
+                        var customers = db.Query<SalesViewModel>(query);
+
+
+                        dataGrid1.ItemsSource = customers.ToList();
+                        dataGrid1.DisplayMemberPath = "Name";
+                    }
+                }
             }
         }
     }
