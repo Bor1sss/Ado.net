@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FVzmkEvy5r/7wyXRtmkZsoSIGB8McfPhGRLcYQto48ArHy63szJuxZbC1Zxjop2cpWYLcB8oCfvoHdVOEMSXOw==",
+  "dgSpecHash": "XfHcyodLtim0AHTpmXPvuq9iD6/BdqqGobmj1xWhgm3NuQgtJvX5E+1n51QqgVGVxZlfZm9rtybBKx8/D5TnnA==",
   "success": true,
-  "projectFilePath": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Ado4Customer.csproj",
+  "projectFilePath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Ado4Customer\\Ado4Customer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solt2\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\solt2\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

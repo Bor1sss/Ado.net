@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ado4Customer" xmlns:vm="clr-namespace:Ado3.VM" d:DataContext="{d:DesignInstance Type=vm:VM_Main}"
         mc:Ignorable="d"
-           Title="MainWindow" Height="550" Width="514" MinHeight="550" MinWidth="512">
+           Title="MainWindow" Height="646" Width="514" MinHeight="550" MinWidth="512">
     <Grid>
 
 
@@ -14,13 +14,14 @@
             <Menu>
                 <MenuItem Header="Меню1">
                     <MenuItem Header="Вся инфа" Click="ShowAllInfo"></MenuItem>
-                    <MenuItem Header="Все типы" Click="ShowAllTypes"></MenuItem>
+                    <!--<MenuItem Header="Все типы" Click="ShowAllTypes"></MenuItem>
                     <MenuItem Header="Все менеджеры" Click="ShowAllManagers"></MenuItem>
-                    <MenuItem Header="Все комании" Click="ShowCustomerCompanies"></MenuItem>
+                    <MenuItem Header="Все комании" Click="ShowCustomerCompanies"></MenuItem>-->
                     <Separator />
                     <MenuItem Header="Показать max проданных" Click="ShowMaxQuantity"></MenuItem>
                     <MenuItem Header="Показать min проданных" Click="ShowMinQuantity"></MenuItem>
                     <MenuItem Header="Показать max Price" Click="ShowMaxPrice"></MenuItem>
+                    <MenuItem Header="Показать max Price" Click="ShowMinPrice"></MenuItem>
 
                 </MenuItem>
                 <MenuItem Header="Меню2">
@@ -31,58 +32,71 @@
                     <MenuItem Header="Показать среднюю количество" Click="ShowAvgQ"></MenuItem>
 
                 </MenuItem>
-                <MenuItem Header="Добавление">
-                    <MenuItem Header="Добавить новый товар" Click="InsertNewProduct"></MenuItem>
-                    <MenuItem Header="Добавить новый тип товара" Click="InsertProductType"></MenuItem>
-                    <MenuItem Header="Добавить нового Менеджера" Click="InsertSaleManager"></MenuItem>
-                    <MenuItem Header="Добавить новую компаню покупателя" Click="InsertCustomer"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="Обновления">
-                    <MenuItem Header="Подтвердить Обнововление" Click="UpdateProductInfo2"></MenuItem>
-                </MenuItem>
                 <Separator />
-                <MenuItem Header="Показать">
-                    <MenuItem Header="Показать информацию о менеджере с наибольшим количеством продаж по количеству единиц" Click="GetTopSalesManager"></MenuItem>
-                    <MenuItem Header="Показать информацию о менеджере по продажам с наибольшей общей суммой прибыли;" Click="GetTopProfitManager"></MenuItem>
-                    <MenuItem Header="Показать информацию о" Click="GetTopCustomerByTotalAmount"></MenuItem>
-                    <MenuItem Header="Показать информацию о с наибольшим количеством продаж по единицам;" Click="GetTopProductTypeByQuantitySold"></MenuItem>
-                    <MenuItem Header="■ Показать название канцтоваров, которые не продавались заданное количество дней." Click="GetProductsNotSoldForDays"></MenuItem>
-                </MenuItem>
             </Menu>
 
 
 
-            <DataGrid Height="300px" x:Name="dataGrid1">
+            <DataGrid SelectionChanged="dataGrid1_SelectionChanged" Height="300px" x:Name="dataGrid1">
                 <DataGrid.Columns>
-                 
-                   
+
+
                 </DataGrid.Columns>
-                <DataGrid.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Tag="Up1" Header="Обновить" Click="UpdateProductInfo"/>
-                        <MenuItem Tag="Up1" Header="Delete" Click="Delete"/>
-                    </ContextMenu>
-                </DataGrid.ContextMenu>
             </DataGrid>
 
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Orientation="Vertical">
 
-                    <TextBox x:Name="textBox1" Height="50px" Width="300px" Margin="0px 20px 0px 0px" AcceptsReturn="True"></TextBox>
+                    <StackPanel>
+                        <Label Content="Name:"/>
+                        <TextBox x:Name="txtName"/>
+
+                        <Label Content="Quantity:"/>
+                        <TextBox x:Name="txtQuantity"/>
+
+                        <Label Content="CostPrice:"/>
+                        <TextBox x:Name="txtCostPrice"/>
+
+                        <Button Content="Add" Click="AddButton_Click"/>
+                        <Button x:Name="btn1" Click="EditItem_Click">Edit</Button>
+                        <Button x:Name="btn2" Click="Del4_Click">Del</Button>
+                    </StackPanel>
+
                     <StackPanel HorizontalAlignment="Left" Margin="20px 5px 5px 0px">
                         <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                            
                             <ComboBox x:Name="cb1" Width="100px" SelectionChanged="cb1_SelectionChanged"></ComboBox>
-                            <ComboBox x:Name="cb2" Width="100px" SelectionChanged="cb2_SelectionChanged"></ComboBox>
-                            <ComboBox x:Name="cb3" Width="100px" SelectionChanged="cb3_SelectionChanged"></ComboBox>
+                                <TextBox x:Name="cbText1" Width="150"></TextBox>
+                                <Button Click="Button_Click">Add</Button>
+                                <Button Click="Edit_Click">Edit</Button>
+                                <Button Click="Del_Click">del</Button>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <ComboBox x:Name="cb2" Width="100px" SelectionChanged="cb2_SelectionChanged"></ComboBox>
+                                <TextBox x:Name="cbText2" Width="150"></TextBox>
+                                <Button Click="Button2_Click">Add</Button>
+                                <Button Click="Edit2_Click">Edit</Button>
+                                <Button Click="Del2_Click">del</Button>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                    <ComboBox x:Name="cb3" Width="100px" SelectionChanged="cb3_SelectionChanged"></ComboBox>
+                                <TextBox x:Name="cbText3" Width="150"></TextBox>
+                                <Button Click="Button3_Click">Add</Button>
+                                <Button Click="Edit3_Click">Edit</Button>
+                                <Button Click="Del3_Click">del</Button>
+                            </StackPanel>
                         </StackPanel>
 
                     </StackPanel>
 
-                    <Button x:Name="Sub"  Width="150px" Height="20px" Margin="0px 10px" Content="Submit" Click="Submit"></Button>
+             
                 </StackPanel>
             </Grid>
         </StackPanel>

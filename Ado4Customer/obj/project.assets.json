@@ -4723,11 +4723,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Ado4Customer.csproj",
+      "projectUniqueName": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Ado4Customer\\Ado4Customer.csproj",
       "projectName": "Ado4Customer",
-      "projectPath": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\Ado4Customer.csproj",
+      "projectPath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Ado4Customer\\Ado4Customer.csproj",
       "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-      "outputPath": "D:\\1STEP\\@Ado\\Ado.net\\Ado4Customer\\obj\\",
+      "outputPath": "C:\\Users\\solt2\\OneDrive\\Робочий стіл\\ADO ssd\\Ado.net\\Ado4Customer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

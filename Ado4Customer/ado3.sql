@@ -115,27 +115,9 @@ AS
 BEGIN
  SELECT
 
-        P.ProductID,
-        P.ProductName,
-        PT.TypeName AS ProductType,
-        P.Quantity,
-        P.CostPrice,
-		S.SaleID,
-        SM.ManagerName AS SalesManager,
-        C.CustomerCompanyName,
-        S.QuantitySold,
-        S.UnitPrice,
-        S.SaleDate
+       *
     FROM
-        Products P
-    INNER JOIN
-        ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
-    LEFT JOIN
-        Sales S ON P.ProductID = S.ProductID
-    LEFT JOIN
-        SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
-    LEFT JOIN
-        Customers C ON S.CustomerID = C.CustomerID;
+	Products
 END;
 GO
 
@@ -149,7 +131,7 @@ GO
 Create Procedure GetSalesManegers
 As
 begin 
-	Select ManagerName From SalesManagers
+	Select * From SalesManagers
 End;
 GO
 
@@ -162,145 +144,83 @@ End;
 GO
 
 
---
 CREATE PROCEDURE GetMaxQuantity
 AS
 BEGIN
     SELECT TOP 1
-        P.ProductID,
-        P.ProductName,
-        PT.TypeName AS ProductType,
-        P.Quantity,
-        P.CostPrice,
-        SM.ManagerName AS SalesManager,
-        C.CustomerCompanyName,
-        S.QuantitySold,
-        S.UnitPrice,
-        S.SaleDate
+		*
     FROM
         Products P
-    INNER JOIN
-        ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
-    INNER JOIN
-        Sales S ON P.ProductID = S.ProductID
-    INNER JOIN
-        SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
-    INNER JOIN
-        Customers C ON S.CustomerID = C.CustomerID
     ORDER BY
         P.Quantity DESC;
 END;
 GO
-
 CREATE PROCEDURE GetMinQuantity
 AS
 BEGIN
     SELECT TOP 1
-        P.ProductID,
-        P.ProductName,
-        PT.TypeName AS ProductType,
-        P.Quantity,
-        P.CostPrice,
-        SM.ManagerName AS SalesManager,
-        C.CustomerCompanyName,
-        S.QuantitySold,
-        S.UnitPrice,
-        S.SaleDate
+     *
     FROM
         Products P
-    INNER JOIN
-        ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
-    INNER JOIN
-        Sales S ON P.ProductID = S.ProductID
-    INNER JOIN
-        SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
-    INNER JOIN
-        Customers C ON S.CustomerID = C.CustomerID
     ORDER BY
         P.Quantity ASC;
 END;
 GO
 
 
-
 CREATE PROCEDURE GetMaxPrice
 AS
 BEGIN
     SELECT TOP 1
-        P.ProductID,
-        P.ProductName,
-        PT.TypeName AS ProductType,
-        P.Quantity,
-        P.CostPrice,
-        SM.ManagerName AS SalesManager,
-        C.CustomerCompanyName,
-        S.QuantitySold,
-        S.UnitPrice,
-        S.SaleDate
+	*
     FROM
         Products P
-    INNER JOIN
-        ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
-    INNER JOIN
-        Sales S ON P.ProductID = S.ProductID
-    INNER JOIN
-        SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
-    INNER JOIN
-        Customers C ON S.CustomerID = C.CustomerID
     ORDER BY
         P.CostPrice DESC;
 END;
 GO
 
-
-
-
+CREATE PROCEDURE GetMinPrice
+AS
+BEGIN
+    SELECT TOP 1
+        *
+    FROM
+        Products P
+    ORDER BY
+        P.CostPrice ASC;
+END;
+GO
 CREATE PROCEDURE GetProductsByType
     @ProductType VARCHAR(50)
 AS
 BEGIN
     SELECT
-        P.ProductID,
-        P.ProductName,
-        PT.TypeName AS ProductType,
-        P.Quantity,
-        P.CostPrice,
-        SM.ManagerName AS SalesManager,
-        C.CustomerCompanyName,
-        S.QuantitySold,
-        S.UnitPrice,
-        S.SaleDate
+		P.ProductID,
+		P.ProductName,
+		P.ProductTypeID,
+		P.CostPrice,
+		P.Quantity
     FROM
         Products P
     INNER JOIN
         ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
-    INNER JOIN
-        Sales S ON P.ProductID = S.ProductID
-    INNER JOIN
-        SalesManagers SM ON S.SalesManagerID = SM.SalesManagerID
-    INNER JOIN
-        Customers C ON S.CustomerID = C.CustomerID
     WHERE
         PT.TypeName = @ProductType;
 END;
 GO
 
-
+drop procedure GetProductsBySalesManager
 CREATE PROCEDURE GetProductsBySalesManager
     @SalesManagerName VARCHAR(255)
 AS
 BEGIN
     SELECT
         P.ProductID,
+		p.ProductTypeID,
         P.ProductName,
-        PT.TypeName AS ProductType,
         P.Quantity,
-        P.CostPrice,
-        SM.ManagerName AS SalesManager,
-        C.CustomerCompanyName,
-        S.QuantitySold,
-        S.UnitPrice,
-        S.SaleDate
+        P.CostPrice
     FROM
         Products P
     INNER JOIN
@@ -315,25 +235,16 @@ BEGIN
         SM.ManagerName = @SalesManagerName;
 END;
 GO
-
-
-
-
 CREATE PROCEDURE GetProductsByCustomerCompany
     @CustomerCompanyName VARCHAR(255)
 AS
 BEGIN
     SELECT
         P.ProductID,
+		p.ProductTypeID,
         P.ProductName,
-        PT.TypeName AS ProductType,
         P.Quantity,
-        P.CostPrice,
-        SM.ManagerName AS SalesManager,
-        C.CustomerCompanyName,
-        S.QuantitySold,
-        S.UnitPrice,
-        S.SaleDate
+        P.CostPrice
     FROM
         Products P
     INNER JOIN
@@ -352,21 +263,16 @@ GO
 
 
 
-
 CREATE PROCEDURE GetLatestSale
 AS
 BEGIN
     SELECT TOP 1
         P.ProductID,
+		p.ProductTypeID,
         P.ProductName,
-        PT.TypeName AS ProductType,
         P.Quantity,
         P.CostPrice,
-        SM.ManagerName AS SalesManager,
-        C.CustomerCompanyName,
-        S.QuantitySold,
-        S.UnitPrice,
-        S.SaleDate
+		SaleDate
     FROM
         Products P
     INNER JOIN
@@ -385,14 +291,16 @@ GO
 CREATE PROCEDURE GetAvgQ
 AS
 BEGIN
-    SELECT
-        PT.TypeName AS ProductType,
+  SELECT
+        PT.ProductTypeID, 
+        PT.TypeName,
         AVG(P.Quantity) AS AverageQuantity
     FROM
         Products P
     INNER JOIN
         ProductTypes PT ON P.ProductTypeID = PT.ProductTypeID
     GROUP BY
+        PT.ProductTypeID,
         PT.TypeName;
 END;
 GO
@@ -427,7 +335,6 @@ BEGIN
 END;
 GO
 
-
 CREATE PROCEDURE InsertNewProductType
     @ProductTypeName VARCHAR(50)
 AS
@@ -458,17 +365,22 @@ BEGIN
     VALUES (@CustomerCompanyName);
 END;
 GO
-
-
-
 CREATE PROCEDURE UpdateProductInfo
-    @ProductID INT,
+    @ProductName VARCHAR(255),
     @NewProductName VARCHAR(255),
-    @NewProductTypeID INT,
+    @NewProductTypeName VARCHAR(50), -- Новое имя типа продукта
     @NewQuantity INT,
     @NewCostPrice DECIMAL(10, 2)
 AS
 BEGIN
+    DECLARE @NewProductTypeID INT;
+
+    -- Получаем ID нового типа продукта по его имени
+    SELECT @NewProductTypeID = ProductTypeID
+    FROM ProductTypes
+    WHERE TypeName = @NewProductTypeName;
+
+    -- Обновляем информацию о продукте
     UPDATE Products
     SET
         ProductName = @NewProductName,
@@ -476,9 +388,9 @@ BEGIN
         Quantity = @NewQuantity,
         CostPrice = @NewCostPrice
     WHERE
-        ProductID = @ProductID;
+        ProductName = @ProductName;
 END;
-GO
+
 
 CREATE PROCEDURE UpdateSalesData
     @SaleID INT,
@@ -510,30 +422,26 @@ BEGIN
     SELECT * FROM Customers;
 END;
 GO
-
 CREATE PROCEDURE UpdateCustomerCompany
-    @CustomerID INT,
+    @CustomerCompanyName VARCHAR(255),
     @NewCompanyName VARCHAR(255)
 AS
 BEGIN
-    -- Просто обновляем название фирмы покупателя
     UPDATE Customers
     SET CustomerCompanyName = @NewCompanyName
-    WHERE CustomerID = @CustomerID;
+    WHERE Customers.CustomerCompanyName = @CustomerCompanyName;
 
   
 END;
 GO
 CREATE PROCEDURE UpdateProductType
-    @ProductTypeID INT,
+    @ProductTypeName VARCHAR(255),
     @NewProductTypeName VARCHAR(50)
 AS
 BEGIN
-    -- Просто обновляем название типа канцтовара
     UPDATE ProductTypes
     SET TypeName = @NewProductTypeName
-    WHERE ProductTypeID = @ProductTypeID;
-
+    WHERE ProductTypes.TypeName = @ProductTypeName;
 END;
 GO
 
